@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+	    <title>
+	        Isaac Sokket
+	    </title>
+	</HEAD>
+	<BODY>
+		<div id="main"></div>
+		<script>
+		    			var b, c, e, l, lbl, s, x;
+	
+	x = document.getElementById('main');
+	// ELEMENT
+	l = 'Welcome user! Welcome to my github.io page, which I use as a dump for all my stupid things. -- Coming Soon! ';
+	// TEXT
+	s = 53;
+	// SPEED
+	b = '';
+	//DONT TOUCH
+	e = 0;
+	//DONT TOUCH
+	c = 0;
+	//DONT TOUCH
+	lbl = function() {
+	  c = l.charAt(e);
+	  e++;
+	  b += c;
+	  x.innerHTML = b;
+	  if (l.length !== e) {
+	    setTimeout((function() {
+	      lbl();
+	    }), s);
+	  }
+	};
+	
+	if (l.length !== e) {
+	  setTimeout((function() {
+	    lbl();
+	  }), s);
+	}
+	
+	/* Letter By Letter Engine
+	 By Void */
+		</script>
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+		    body {
+		        padding:5px;
+		        background:black;
+		        color:lime;
+		        font-family: 'B612 Mono', monospace;
+		    }
+		</style>
+	</BODY>
+</HTML>
